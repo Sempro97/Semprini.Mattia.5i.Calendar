@@ -1,0 +1,24 @@
+﻿@model Semprini.Mattia._5i.Calendar.JsonMeteo.Jsonmeteo
+@{
+    ViewBag.Title = "Inserisci la località";
+}
+
+@using (Html.BeginForm("Cerca", "Home", FormMethod.Post))
+{
+
+    <div>
+        <fieldset>
+            <legend>Inserisci una località</legend>
+
+            <div class="editor-field">
+
+                @Html.TextBoxFor(u => u.City, new { placeholder = "Inserisci qui la città" })
+                @Html.ValidationMessageFor(u => u.City)
+                <input type="submit" class="btn btn-default" aria-label="Left Align" value="Ottieni meteo" />     
+            </div>
+            
+     </fieldset>
+    </div>
+}
+
+

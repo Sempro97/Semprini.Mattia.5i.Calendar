@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Calendario - Mattia Semprini";
+}
+
+<div class="jumbotron">
+<h1>Calendario e Meteo</h1>
+ <h3>Seleziona il servizio a lei gradito</h3>
+@using (Html.BeginForm("Calendario", "Home"))
+{        
+<input type="submit" class="btn btn-default" aria-label="Left Align" value="Ottieni eventi">  
+}
+
+@using (Html.BeginForm("indexmeteo", "Home"))
+{
+    <input type="submit" class="btn btn-default" aria-label="Left Align" value="Ottieni meteo">
+}
+
+</div>
+
